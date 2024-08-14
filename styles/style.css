@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 100px auto;
+}
+
+.display__flex {
+    display: flex;
+}
+
+.category--text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.26px;
+    text-align: left;
+    position: relative;
+    top: -50px;
+    color: rgba(219, 68, 68, 1);
+    margin-left: 30px;
+}
+
+.category--text::before {
+    content: "";
+    width: 20px;
+    height: 40px;
+    background: rgba(219, 68, 68, 1);
+    border-radius: 4px;
+    position: absolute;
+    left: -30px;
+    top: -20px;
+}
+
+.category--title {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+
+.jc-sp {
+    justify-content: space-between;
+}
+
+.jc-sa {
+    justify-content: space-around;
+}
+
+.vector {
+    width: 46px;
+    height: 46px;
+    padding: 11px;
+    background-color: rgba(245, 245, 245, 1);
+    margin-left: 20px;
+    border-radius: 50%;
+    transition: all 0.1s;
+}
+.vector:hover{
+    transform: scale(1.2);
+}
+.vector:active{
+    transform: scale(0.8);
+}
+
+.vector--rotation{
+    rotate: 180deg;
+}
+
+.browse__by__category--cards {
+    margin-top: 100px;
+}
+
+.browse__by__category--card {
+    width: 170px;
+    height: 145px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-wrap: nowrap;
+}
+
+.browse__by__category--card--title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.26;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+
+}
+
+.browse__by__category--card--img {
+    margin-left: 57px;
+    margin-top: 25px;
+}
+
+.browse__by__category--card--title--phone--margin {
+    margin-left: 55px;
+}
+
+.browse__by__category--card--title--comp--margin {
+    margin-left: 40px;
+}
+
+.browse__by__category--card--title--watch--margin {
+    margin-left: 34px;
+}
+
+.browse__by__category--card--title--camera--margin {
+    margin-left: 51px;
+}
+
+.browse__by__category--card--title--headphone--margin {
+    margin-left: 40px;
+}
+
+.browse__by__category--card--title--pad--margin {
+    margin-left: 53px;
+}
+a{
+    text-decoration: none;
+}
+a h5:hover{
+    color: blue;
+}
+.button__category {
+    width: 159px;
+    height: 56px;
+    padding: 16px 48px 16px 48px;
+    gap: 10px;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.26;
+    text-align: left;
+    color: rgba(250, 250, 250, 1);
+}
+.button__category--red{
+    background-color: rgba(219, 68, 68, 1);
+
+}
+
+.this__month--card--img--box {
+    position: relative;
+}
+
+.this__month--card--img {
+    background-color:rgba(245, 245, 245, 1);
+    padding: 35px 40px;
+    width: 270px;
+    height: 250px;
+    border-radius: 4px
+}
+
+.this__month--card {
+    width: 270px;
+    height: 350px;
+    gap: 16px;
+    border-radius:4px;
+    
+}
+
+.this__month--card--img--items {
+    width: 34px;
+    height: 34px;
+
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+   
+}
+
+.this__month--card--img--like {
+    padding: 8px 9px;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+.this__month--card--img--eye {
+    position: absolute;
+    right: 15px;
+    padding: 6px 5px;
+    top: 60px;
+}
+.this__month--card--product--name{
+font-size: 16px;
+font-weight: 500;
+line-height: 1.26;
+text-align: left;
+color:rgba(0, 0, 0, 1);
+margin-top: 16px;
+margin-bottom: 8px;
+
+}
+.this__month--card--price{
+font-size: 16px;
+font-weight: 500;
+line-height: 1.26;
+text-align: left;
+color:rgba(219, 68, 68, 1); 
+}
+.this__month--card--price--color{
+    text-decoration:line-through;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    color:rgba(0, 0, 0, 0.5); 
+}
+.this__month--card--stars{
+    align-items:center;
+}
+.this__month--card--sold--count{
+font-size: 14px;
+font-weight: 600;
+line-height: 1.26;
+text-align: left;
+color: rgba(0, 0, 0, 0.5);
+margin-left: 10px;
+}
+.this__month--cards--box{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.music__exp{
+    width: 100%;
+    height: 500px;
+    background-color:rgba(0, 0, 0, 1);
+    background-image: url(../images/jbl-bg.png);
+    background-repeat: no-repeat;
+    background-size: 600px 420px;
+    background-position-x:526px;
+    background-position-y:37px;
+
+    padding: 45px 16px 45px 16px;
+}
+.music__exp{
+    padding:69px 44px 43px 56px ;
+}
+.munsic__category{
+font-size: 16px;
+font-weight: 600;
+line-height: 20px;
+text-align: left;
+color: rgba(0, 255, 102, 1);
+margin-bottom: 32px;
+
+}
+.music__title{
+font-size: 48px;
+font-weight: 600;
+line-height: 1.26x;
+letter-spacing: 0.04em;
+text-align: left;
+color:rgba(250, 250, 250, 1);
+width: 445px;
+height: 120px;
+margin-bottom: 32px;
+}
+.music__cirles{
+    width: 320px;
+height:62px;
+gap: 24px;
+
+}
+.music__cirle{
+    width: 62px;
+height: 62px;
+background: rgba(255, 255, 255, 1);
+
+border-radius:50%;
+}
+.music__cirle h5{
+font-size: 11px;
+font-weight: 400;
+line-height: 1.26;
+text-align: center;
+
+color: rgba(0, 0, 0, 1);
+}
+.music__cirle p{
+font-size: 16px;
+font-weight: 600;
+line-height: 1.26px;
+text-align: center;
+margin-bottom: 10px;
+margin-left: auto;
+margin-top: 17px;    
+}
+.button__category--green{
+    background-color:rgba(0, 255, 102, 1);
+    margin-top: 40px;
+}
+input{
+    transition: all 0.5s;
+}
+input:hover{
+    background-color:blue;
+    color: white;
+}
+input:active{
+ transform: scale(0.8);
+}
